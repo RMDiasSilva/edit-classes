@@ -6,15 +6,52 @@ body {
   color: #f5f6f7;
   font-family: Tahoma, Helvetica, sans-serif;
   font-size: 16px;
+  text-align: center;
 }
 
 /* ATENÇÃO QUE O STYLE NÃO ESTÁ COMPLETO */
 
 form {
+ width: 60vw;
   max-width: 500px;
   min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
 }
 
+
 fieldset {
+  border: none;
+  padding: 2rem 0;
   border-bottom: 3px solid #3b3b4f;
+}
+fieldset:last-of-type{
+  border-bottom: none;
+}
+
+/* label::after {
+ content: "\a";
+ white-space: pre;
+}
+
+input::before {
+  content: "\a";
+ white-space: pre;
+} */
+
+label {
+  display:block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: white;
+}
+
+.inline {
+  width: unset;
+  vertical-align: middle;
 }
